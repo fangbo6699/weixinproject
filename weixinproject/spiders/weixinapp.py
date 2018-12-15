@@ -1,4 +1,18 @@
 # -*- coding: utf-8 -*-
+"""
+F:\python3.6\Python36\Scripts\scrapy startproject doubanproject
+cd doubanproject
+F:\python3.6\Python36\Scripts\scrapy genspider doubanmovie "douban.com"(普通模板的爬虫)
+F:\python3.6\Python36\Scripts\scrapy genspider -t crawl doubanmovie "douban.com"(特殊模板的爬虫)
+F:\python3.6\Python36\Scripts\scrapy crawl douban --nolog
+
+F:\python3.6\Python36\Scripts\scrapyproject\doubanproject>F:\python3.6\Python36\Scripts\scrapy genspider -l
+Available templates:
+  basic
+  crawl
+  csvfeed
+  xmlfeed
+"""
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
